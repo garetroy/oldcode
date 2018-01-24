@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Envision Your Water Usage</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/wateruse.css') }}">
+  <script src="{{ url_for('static', filename='js/wateruse.js') }}"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="main">
+    <p>How many minutes a day do you spend in the shower?</p>
+    <form oninput="x.value=parseInt(a.value)">
+      <input type="range" id="a" value="0" min="0" max="60" step="5">
+      <output name="x" for="a"></output> 
+    </form>
+    <p>How many times a day do you flush the toilet?</p>
+    <form oninput="x.value=parseInt(b.value)">
+      <input type="range" id="b" value="0" min="0" max="10" step="1">
+      <output name="x" for="b"></output> 
+    </form>
+    <p>How many times a week do you wash dishes?</p>
+    <form oninput="x.value=parseInt(e.value)">
+      <input type="range" id="e" value="0" min="0" max="14" step="1">
+      <output name="x" for="e"></output> 
+    </form> 
+    <p>How many loads of laundry do you do in a week?</p>
+    <form oninput="x.value=parseInt(c.value)">
+      <input type="range" id="c" value="0" min="0" max="14" step="1">
+      <output name="x" for="c"></output> 
+    </form>
+    <p>How many cups of water do you drink a day?</p>
+    <form oninput="x.value=parseInt(d.value)">
+      <input type="range" id="d" value="0" min="0" max="20" step="1">
+      <output name="x" for="d"></output> 
+    </form> 
+    <button id="submit-btn">Calculate</button>
+    <div id="textarea"></div>
+    <p></p>
+    <div id="container">
+      <div id="left">
+        <img id="img" src="{{ url_for('static', filename='photos/Somalia.png') }}">
+      </div>
+      <div id="right">
+        <p>Somalia is the country with the 
+least access to clean water in the world.</p>
+        <p>Some Somalis have access to only 
+1.32 gallons a day.</p>
+        <p>The average American uses the same amount 
+of water daily as 75 Somalis.</p>
+        <p>Find out how you can make a difference,
+visit one of the following websites.</p>
+    <i class="fa fa-tint fa-2x" class="drop"><a class='padding' href="http://water.org/">Water.org</a></i>
+    <i class="fa fa-tint fa-2x" class="drop"><a class='padding' href="http://thewaterproject.org">The Water Project</a></i>
+    <i class="fa fa-tint fa-2x" class="drop"><a class='padding' href="https://donate.charitywater.org/donate/wayt">Charity Water</a></i>
+      </div>
+      <div class="clear"></div>
+    </div>
+<br><br><br><br><br><br><br><br><br>
+  </div>
+</body>
+<footer>Website made by <a href="http://www.garettroberts.me">Garett Roberts</a>, <a href="http://www.danielhespen.com">Daniel Hespen</a>, and <a href="http://www.haley-coveny.squarespace.com">Haley Coveny</a>.</footer>
+</html>

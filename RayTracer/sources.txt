@@ -1,0 +1,9 @@
+Vec3 and raytracer implementation was developed from 
+https://www.scratchapixel.com/index.php
+
+KD-Tree is developed from 
+https://blog.frogslayer.com/kd-trees-for-faster-ray-tracing-with-triangles/
+
+BVH-Tree sourcecode was cloned from
+https://github.com/brandonpelfrey/Fast-BVH
+

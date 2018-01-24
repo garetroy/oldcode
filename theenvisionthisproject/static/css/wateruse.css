@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+    body {
+      text-align: center;
+      background: url("/static/photos/water1.jpg");
+      background-color: #0185b6;
+      background-size: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: 'Lobster', cursive;
+    }
+    p {
+      font-size: 30px;
+      color: white;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+    output {
+      display:inline-block;
+    }
+    #submit-btn {
+      margin-top: 20px;
+      background-color: white;
+      width:200px;
+      height: 50px;
+      border-radius: 20px;
+      font-family: 'Lobster', cursive;
+      font-size: 30px;
+      color:#1e95c6;
+    }
+    #main{
+      padding-top: 65%;
+    }
+
+    #img{
+        width: 140%;
+        height: auto;
+    }
+
+    #container{
+      padding-top: 15%
+    }
+
+    #left
+    {
+      padding-left: 5%;
+      padding-right: 40px;
+      padding-top: -5%;
+      width: 200px;
+      float: left;
+    }
+
+    #right
+    {
+      padding-right: 5%;
+      margin-left: 350px; /* Change this to whatever the width of your left column is*/
+      font-family: 'Lobster', cursive;
+      text-align: left;
+    }
+
+    .clear
+    {
+      clear: both;
+    }
+
+
+    #textarea{
+      padding-top: 150px;
+      font-size: 30px
+    }
+
+    #bignumber{
+      font-size: 70px;
+      font-style: bold;
+    }
+
+    #temphide{
+      padding-top: 100px;
+    }
+
+    a{
+      font-family: 'Lobster', cursive;
+      color: white;
+    }
+
+    .padding{
+      padding-right: 30px;
+      padding-left: 5px;
+    }

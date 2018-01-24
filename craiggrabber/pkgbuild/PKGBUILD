@@ -1,0 +1,33 @@
+# Maintainer/Creator: Garett Roberts <mygarett@gmail.com>
+
+pkgname=python-craiggrabber
+pkgver=1.0
+pkgrel=1
+pkgdesc="A Craiglist Scraper that downloads all post info from a specified page"
+arch=(any)
+url="https://github.com/garetroy/craiggrabber"
+license=(MIT)
+groups=()
+depends=(python3
+		 python-beautifulsoup4
+		 python-requests
+		 python3)
+makedepends=()
+checkdepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+source=("https://github.com/garetroy/craiggrabber/blob/master/pkgbuild/python-craggrabber.tar.gz")
+noextract=()
+validpgpkeys=()
+md5sums=('6077939286ace036560341867b1a0d5f')
+
+package() {
+  cd "$srcdir/${_pkgname}"
+  python3 setup.py install --root="$pkgdir/" --optimize=1
+}
+
+

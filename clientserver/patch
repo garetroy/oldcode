@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mv clientNew.c client.c
+gcc client.c -o client
